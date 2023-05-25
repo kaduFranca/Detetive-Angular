@@ -17,6 +17,12 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",
+    "paths": {
+      "sso-login-components": [
+        "dist/sso-login-components/sso-login-components",
+        "dist/sso-login-components"
+      ]
+    },
     "module": "es2020",
     "lib": [
       "es2020",

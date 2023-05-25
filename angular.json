@@ -105,6 +105,37 @@
           }
         }
       }
+    },
+    "sso-login-components": {
+      "projectType": "library",
+      "root": "projects/sso-login-components",
+      "sourceRoot": "projects/sso-login-components/src",
+      "prefix": "sso",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/sso-login-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/sso-login-components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/sso-login-components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sso-login-components/src/test.ts",
+            "tsConfig": "projects/sso-login-components/tsconfig.spec.json",
+            "karmaConfig": "projects/sso-login-components/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "Detetive-Angular"

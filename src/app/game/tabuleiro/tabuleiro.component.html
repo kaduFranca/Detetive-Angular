@@ -1,0 +1,8 @@
+<div class="center">
+  <ul *ngFor="let i of limitMapXArray">
+    <li *ngFor="let j of limitMapYArray">
+      <app-peace [id]="i + '-' + j"></app-peace>
+      <!-- <img id="{{ i }}-{{ j }}" src="../../../assets/imgs/azulejo.png" alt="" /> -->
+    </li>
+  </ul>
+</div>
